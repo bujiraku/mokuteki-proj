@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>目的表現の練習</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="wrapper">
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+    <div class="container-sm">
+    <div class="row m-md-5 px-lg-5">
+        <div class="col text-center bg-white shadow px-4 py-5 p-md-5 my-sm-1 mx-sm-5 m-3 rounded" style="opacity: 0.8;">
+            <h4>Latihan Pola Kalimat <span class="font-jp">目的表現</span></h4>
+            <h5 style="font-family: HakusyuKaisyoExtraBold_kk; margin: unset;"><p><span><ruby><span>目</span> <rp>(</rp> <rt>もく</rt> <rp>)</rp></ruby><span><ruby><span>的</span> <rp>(</rp> <rt>てき</rt> <rp>)</rp></ruby><span><ruby><span>表</span> <rp>(</rp> <rt>ひょう</rt> <rp>)</rp></ruby><span><ruby><span>現</span> <rp>(</rp> <rt>げん</rt> <rp>)</rp></ruby><span>の</span><span><ruby><span>練</span> <rp>(</rp> <rt>れん</rt> <rp>)</rp></ruby><span><ruby><span>習</span> <rp>(</rp> <rt>しゅう</rt> <rp>)</rp></ruby></span></span></span></span></span></span></p></h5><hr>
+            <h5>Jawablah pertanyaan berikut sesuai instruksi</h5>
+            <div class="topright">
+            <div id="switcher" class="form-inline btn btn-alt" onclick="switchtheme()"><i class="material-icons">&#xe23a;</i></div>
+            <a href="/" class="btn-outline-salmon shadow-sm p-2 btn">&nbsp;<svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+              <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            </svg>&nbsp;</a>
+            </div>
+            <!--soal 1-->
+            <div id="utas1">
+                <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 1</span>
+
+                  <div class="text-dec-1 text-left">
+                    <p>Lengkapilah kalimat rumpang di bawah ini, dengan mengubah bentuk kata kerja yang terdapat dalam tanda ( ) ke bentuk yang tepat!</p>
+                    <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                    <p>山田<span>：もうあの映画を</span><ruby><span>観</span><rp>(</rp><rt>み</rt><rp>)</rp></ruby><span>ましたか？</span></p>
+              <p>田中<span>：いいえ。今度の土曜日に＿＿＿＿＿と思います。<strong>（<ruby><span>観</span>
+                <rp>(</rp>
+                <rt>み</rt>
+                <rp>)</rp>
+            </ruby>に行く）</strong></span></p>
+                  </div>
+                <form class="form-inline justify-content-center" id="soal1">
+                    <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z1"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                    <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-1" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp1()">
+                    <button type="submit" onclick="cekjawaban1(); return false;" class="btn btn-primary btn-lg" form="soal1">Periksa</button>
+                    <span style="display: none;" id="kj1">観に行こう</span>
+                </form>
+                <div class="alert alert-success" style="display: none;" id="y1"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>今度の土曜日に<strong>観に行こう</strong>と思います。</p></div>
+                <div class="alert alert-danger" style="display: none;" id="x1"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show1()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+                <a class="btn btn-success float-md-right my-2" style="display: none;" id="next1" onclick="next1()">Ke Soal Berikutnya</a>
+            </div>
+            <!--soal 2-->
+            <div id="utas2" style="display: none;">
+                <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 2</span>
+
+                  <div class="text-dec-1 text-left">
+                    <p>Lengkapilah kalimat rumpang di bawah ini, dengan mengubah bentuk kata kerja yang terdapat dalam tanda ( ) ke bentuk yang tepat!</p>
+                    <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                    <p>山田：人気の映画だったのに<ruby><span>観</span><rp>(</rp><rt>み</rt><rp>)</rp></ruby>ていなかったの？</p>
+                    <p>田中：うん、あとでビデオを借りて＿＿＿＿と思っていたから・・・。<strong>（<ruby><span>観</span><rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます）</strong></p>
+                  </div>
+                <form class="form-inline justify-content-center" id="soal2">
+                    <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z2"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                    <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-2" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp2()">
+                    <button type="submit" onclick="cekjawaban2(); return false;" class="btn btn-primary btn-lg" form="soal2">Periksa</button>
+                    <span style="display: none;" id="kj2">観よう</span>
+                </form>
+                <div class="alert alert-success" style="display: none;" id="y2"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>あとでビデオを借りて<strong>観よう</strong>と思っていたから・・・。</p></div>
+                <div class="alert alert-danger" style="display: none;" id="x2"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show2()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+                <a class="btn btn-success float-md-right my-2" style="display: none;" id="next2" onclick="next2()">Ke Soal Berikutnya</a>
+            </div>
+            <!--soal 3-->
+            <div id="utas3" style="display: none;">
+                <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 3</span>
+
+                  <div class="text-dec-1 text-left">
+                    <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                    <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                    <p>ああ、おいしかった。このレストランにはまた来ようと<strong>（思います／思っています）</strong>。</p>
+                  </div>
+                <form class="form-inline justify-content-center" id="soal3">
+                    <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z3"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                    <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-3" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp3()">
+                    <button type="submit" onclick="cekjawaban3(); return false;" class="btn btn-primary btn-lg" form="soal3">Periksa</button>
+                    <span style="display: none;" id="kj3">思います</span>
+                </form>
+                <div class="alert alert-success" style="display: none;" id="y3"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>ああ、おいしかった。このレストランにはまた来ようと<strong>思います</strong>。</p>
+                <p>Pada kalimat di atas, menunjukkan bahwa pembicara memutuskan melakukan sesuatu, lalu mengungkapkannya.</p>
+                </div>
+                <div class="alert alert-danger" style="display: none;" id="x3"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show3()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+                <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next3" onclick="next3()">Ke Soal Berikutnya</a>
+            </div>
+            <!--soal 4-->
+            <div id="utas4" style="display: none;">
+                <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 4</span>
+
+                  <div class="text-dec-1 text-left">
+                    <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                    <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                    <p>タバコをやめようとずっと<strong>（思います／思っています）</strong>が、なかなかやめられません。</p>
+                  </div>
+                <form class="form-inline justify-content-center" id="soal4">
+                    <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z4"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                    <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-4" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp4()">
+                    <button type="submit" onclick="cekjawaban4(); return false;" class="btn btn-primary btn-lg" form="soal4">Periksa</button>
+                    <span style="display: none;" id="kj4">思っています</span>
+                </form>
+                <div class="alert alert-success" style="display: none;" id="y4"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>タバコをやめようとずっと<strong>思っています</strong>が、なかなかやめられません。</p>
+                <p>Pola kalimat di atas menunjukkan bahwa pembicara sudah sejak lama bermaksud melakukan sesuatu.</p>
+                </div>
+                <div class="alert alert-danger" style="display: none;" id="x4"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show4()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+                <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next4" onclick="next4()">Ke Soal Berikutnya</a>
+            </div>
+            <!--soal 5-->
+            <div id="utas5" style="display: none;">
+                <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 5</span>
+
+                  <div class="text-dec-1 text-left">
+                    <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                    <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                    <p>彼は<span><ruby><span>喫</span><rp>(</rp><rt>きっ</rt><rp>)</rp></ruby>
+                      <span><ruby><span>茶</span><rp>(</rp><rt>さ</rt><rp>)</rp></ruby>
+                      <span><ruby><span>店</span><rp>(</rp><rt>てん</rt><rp>)</rp></ruby></span></span></span>を作ろうと<strong>（思います／思っています）</strong>。</p>
+                  </div>
+                <form class="form-inline justify-content-center" id="soal5">
+                    <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z5"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                    <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-5" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp5()">
+                    <button type="submit" onclick="cekjawaban5(); return false;" class="btn btn-primary btn-lg" form="soal5">Periksa</button>
+                    <span style="display: none;" id="kj5">思っています</span>
+                </form>
+                <div class="alert alert-success" style="display: none;" id="y5"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>彼は<span><ruby><span>喫</span><rp>(</rp><rt>きっ</rt><rp>)</rp></ruby>
+                    <span><ruby><span>茶</span><rp>(</rp><rt>さ</rt><rp>)</rp></ruby>
+                    <span><ruby><span>店</span><rp>(</rp><rt>てん</rt><rp>)</rp></ruby></span></span></span>を作ろうと<strong>思っています</strong>。</p>
+                <p>Pola 意向形＋と思っています bisa digunakan untuk menyatakan maksud dari orang ke tiga, sedangkan 意向形＋と思います hanya bisa menyatakan maksud pembicara.</p>
+                </div>
+                <div class="alert alert-danger" style="display: none;" id="x5"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+                  </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show5()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+                <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next5" onclick="next5()">Ke Soal Berikutnya</a>
+            </div>
+            <!--soal 6-->
+            <div id="utas6" style="display: none;">
+              <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 6</span>
+
+                <div class="text-dec-1 text-left">
+                  <p>Lengkapilah kalimat rumpang di bawah ini, dengan mengubah bentuk kata kerja yang terdapat dalam tanda ( ) ke bentuk yang tepat!</p>
+                  <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                  <p>今晩、友だちの部屋に＿＿＿＿＿つもりです。<strong>（<ruby>泊<rp>(</rp> <rt>と</rt> <rp>)</rp> </ruby>まります）</strong></p>
+                </div>
+              <form class="form-inline justify-content-center" id="soal6">
+                  <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z6"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                  <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-6" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp6()">
+                  <button type="submit" onclick="cekjawaban6(); return false;" class="btn btn-primary btn-lg" form="soal6">Periksa</button>
+                  <span style="display: none;" id="kj6">泊まる</span>
+              </form>
+              <div class="alert alert-success" style="display: none;" id="y6"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>今晩、友だちの部屋に<ruby>泊<rp>(</rp> <rt>と</rt> <rp>)</rp> </ruby>まるつもりです。</p></div>
+              <div class="alert alert-danger" style="display: none;" id="x6"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+                </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show6()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+              <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next6" onclick="next6()">Ke Soal Berikutnya</a>
+          </div>
+          <!--soal 7-->
+          <div id="utas7" style="display: none;">
+              <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 7</span>
+
+                <div class="text-dec-1 text-left">
+                  <p>Lengkapilah kalimat rumpang di bawah ini, dengan mengubah bentuk kata kerja yang terdapat dalam tanda ( ) ke bentuk yang tepat!</p>
+                  <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                  <p><ruby>世<rp>(</rp> <rt>せ</rt> <rp>)</rp> </ruby><ruby>話<rp>(</rp> <rt>わ</rt> <rp>)</rp> </ruby>が大変なので、ペットは＿＿＿＿つもりです。<strong>（<ruby>飼<rp>(</rp> <rt>か</rt> <rp>)</rp> </ruby>いません）</strong></p>
+                </div>
+              <form class="form-inline justify-content-center" id="soal7">
+                  <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z7"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                  <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-7" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp7()">
+                  <button type="submit" onclick="cekjawaban7(); return false;" class="btn btn-primary btn-lg" form="soal7">Periksa</button>
+                  <span style="display: none;" id="kj7">飼わない</span>
+              </form>
+              <div class="alert alert-success" style="display: none;" id="y7"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p><ruby>世<rp>(</rp> <rt>せ</rt> <rp>)</rp> </ruby><ruby>話<rp>(</rp> <rt>わ</rt> <rp>)</rp> </ruby>が大変なので、ペットは<strong><ruby>飼<rp>(</rp> <rt>か</rt> <rp>)</rp> </ruby>わない</strong>つもりです。</p></div>
+              <div class="alert alert-danger" style="display: none;" id="x7"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+                </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show7()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+              <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next7" onclick="next7()">Ke Soal Berikutnya</a>
+          </div>
+          <!--soal 8-->
+          <div id="utas8" style="display: none;">
+            <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 8</span>
+            
+              <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>ミラ：あなたは最初から、彼を<ruby>危<rp>(</rp> <rt>あぶ</rt> <rp>)</rp> </ruby>ない目にあわせようと考えていたにちがいない</p>
+                <p>キム：ちがう、私はそんなことを<strong>（しないつもりです／するつもりはありません）</strong>。</p>
+              </div>
+            <form class="form-inline justify-content-center" id="soal8">
+                <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z8"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-8" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp8()">
+                <button type="submit" onclick="cekjawaban8(); return false;" class="btn btn-primary btn-lg" form="soal8">Periksa</button>
+                <span style="display: none;" id="kj8">するつもりはありません</span>
+            </form>
+            <div class="alert alert-success" style="display: none;" id="y8"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>キム：ちがう、私はそんなことを<strong>するつもりはありません</strong>。</p>
+            <p>Pola するつもりはありません lebih kuat daripada pola ないつもりです, jadi ketika ingin menyangkal suatu tuduhan pola yang digunakan adalah pola するつもりはありません.</p>
+            </div>
+            <div class="alert alert-danger" style="display: none;" id="x8"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show8()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+            <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next8" onclick="next8()">Ke Soal Berikutnya</a>
+        </div>
+        <!--soal 9-->
+        <div id="utas9" style="display: none;">
+            <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 9</span>
+            
+              <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>明日は朝9時の<ruby>飛<rp>(</rp> <rt>ひ</rt> <rp>)</rp> </ruby><ruby>行<rp>(</rp> <rt>こう</rt> <rp>)</rp> </ruby><ruby>機<rp>(</rp> <rt>き</rt> <rp>)</rp> </ruby>に<strong>（乗る／乗るの／乗ります）</strong>予定です。</p>
+              </div>
+            <form class="form-inline justify-content-center" id="soal9">
+                <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z9"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+                <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-9" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp9()">
+                <button type="submit" onclick="cekjawaban9(); return false;" class="btn btn-primary btn-lg" form="soal9">Periksa</button>
+                <span style="display: none;" id="kj9">乗る</span>
+            </form>
+            <div class="alert alert-success" style="display: none;" id="y9"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>明日は朝9時の<ruby>飛<rp>(</rp> <rt>ひ</rt> <rp>)</rp> </ruby><ruby>行<rp>(</rp> <rt>こう</rt> <rp>)</rp> </ruby><ruby>機<rp>(</rp> <rt>き</rt> <rp>)</rp> </ruby>に<strong>乗る</strong>予定です。</p>
+            </div>
+            <div class="alert alert-danger" style="display: none;" id="x9"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show9()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+            <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next9" onclick="next9()" >Ke Soal Berikutnya</a>
+        </div>
+        <!--soal 10-->
+        <div id="utas10" style="display: none;">
+          <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 10</span>
+          
+            <div class="text-dec-1 text-left">
+              <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+              <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+              <p>午後3時から、<ruby>取<rp>(</rp> <rt>とり</rt> <rp>)</rp> </ruby><ruby>引<rp>(</rp> <rt>ひき</rt> <rp>)</rp> </ruby><ruby>先<rp>(</rp> <rt>さき</rt> <rp>)</rp> </ruby>と<strong>（ミーティング／ミーティングの／ミーティングをします）</strong>予定です。</p>
+            </div>
+          <form class="form-inline justify-content-center" id="soal10">
+              <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z10"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+              <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-10" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp10()">
+              <button type="submit" onclick="cekjawaban10(); return false;" class="btn btn-primary btn-lg" form="soal10">Periksa</button>
+              <span style="display: none;" id="kj10">ミーティングの</span>
+          </form>
+          <div class="alert alert-success" style="display: none;" id="y10"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>午後3時から、<ruby>取<rp>(</rp> <rt>とり</rt> <rp>)</rp> </ruby><ruby>引<rp>(</rp> <rt>ひき</rt> <rp>)</rp> </ruby><ruby>先<rp>(</rp> <rt>さき</rt> <rp>)</rp> </ruby>と<strong>ミーティングの</strong>予定です。</p></div>
+          <div class="alert alert-danger" style="display: none;" id="x10"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+            </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show10()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+          <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next10" onclick="next10()">Ke Soal Berikutnya</a>
+      </div>
+        <!--soal 11-->
+        <div id="utas11" style="display: none;">
+          <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 11</span>
+          
+            <div class="text-dec-1 text-left">
+              <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+              <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+              <p>今日は私がご飯を<strong>（作ろうと思っています／作るつもりだと思います）</strong>。</p>
+            </div>
+          <form class="form-inline justify-content-center" id="soal11">
+              <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z11"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+              <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-11" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp11()">
+              <button type="submit" onclick="cekjawaban11(); return false;" class="btn btn-primary btn-lg" form="soal11">Periksa</button>
+              <span style="display: none;" id="kj11">作ろうと思っています</span>
+          </form>
+          <div class="alert alert-success" style="display: none;" id="y11"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>今日は私がご飯を<strong>作ろうと思っています</strong>。</p>
+          <p>Pola つもりだと思います biasa digunakan ketika menyatakan maksud/niat dari orang ke tiga.</p>
+          </div>
+          <div class="alert alert-danger" style="display: none;" id="x11"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+            </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show11()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+          <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next11" onclick="next11()">Ke Soal Berikutnya</a>
+      </div>
+        <!--soal 12-->
+        <div id="utas12" style="display: none;">
+          <span class="topleft bg-salmon shadow-sm p-2 rounded">Soal nomor 12</span>
+          
+            <div class="text-dec-1 text-left">
+              <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+              <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+              <p>あ、新しい店ができましたね。私はちょっとこの店を<strong>（見ようと思っています／見ようと思います／見るつもりです／見る予定です）</strong>。</p>
+            </div>
+          <form class="form-inline justify-content-center" id="soal12">
+              <div class="alert alert-dismissible alert-warning fade show my-0" style="display: none;" id="z12"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>*Harap isi terlebih dahulu jawabannya</strong></div>
+              <input type="text" autocomplete="off" placeholder="tulis jawaban di sini..." id="input-12" class="form-control form-control-lg mr-sm-2 my-3" onclick="kp12()">
+              <button type="submit" onclick="cekjawaban12(); return false;" class="btn btn-primary btn-lg" form="soal12">Periksa</button>
+              <span style="display: none;" id="kj12">見ようと思います</span>
+          </form>
+          <div class="alert alert-success" style="display: none;" id="y12"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+            </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>あ、新しい店ができましたね。私はちょっとこの店を<strong>見ようと思います</strong>。</p>
+          <p>Kalimat di atas, mengindikasikan bahwa pembicara baru mengetahui kalau ada toko baru, jadi selain pola ようと思う, pola lain tidak bisa digunakan.</p>
+          </div>
+          <div class="alert alert-danger" style="display: none;" id="x12"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-x-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm2.854 5.146a.5.5 0 1 0-.708.708L7.293 7 6.146 8.146a.5.5 0 1 0 .708.708L8 7.707l1.146 1.147a.5.5 0 1 0 .708-.708L8.707 7l1.147-1.146a.5.5 0 0 0-.708-.708L8 6.293 6.854 5.146z"/>
+            </svg><h3 class="alert-heading font-jp"><ruby>不<rp>(</rp> <rt>ふ</rt> <rp>)</rp> </ruby><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3>Jawaban Anda Salah! &ThinSpace;<br><a class="alert-link btn btn-danger" style="color: #fff" onclick="show12()">Coba lagi</a><p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal. Tidak perlu menuliskan kalimat secara keseluruhan, cukup jawabannya saja. Ingat kembali materi yang telah dipelajari!</i></p></div>
+          <a class="btn btn-success float-md-right float-lg-right float-xl-right my-2" style="display: none;" id="next12" data-toggle="modal" data-target="#myModal" onclick="next12()">Selesai</a>
+      </div>
+      <!--kjs-->
+      <div id="skj" style="display: none;">
+        <div>
+            <span class="bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 1</span>
+            <div class="text-dec-1 text-left">
+            <p>Lengkapilah kalimat rumpang di bawah ini, dengan mengubah bentuk kata kerja yang terdapat dalam tanda ( ) ke bentuk yang tepat!</p>
+            <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+            <p>山田<span>：もうあの映画を</span><ruby><span>観</span><rp>(</rp><rt>み</rt><rp>)</rp></ruby><span>ましたか？</span></p>
+            <p>田中<span>：いいえ。今度の土曜日に＿＿＿＿＿と思います。<strong>（<ruby><span>観</span><rp>(</rp><rt>み</rt><rp>)</rp></ruby>に行く）</strong></span></p>
+            </div>
+            <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>今度の土曜日に<strong>観に行こう</strong>と思います。</p></div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 2</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan mengubah bentuk kata kerja yang terdapat dalam tanda ( ) ke bentuk yang tepat!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>山田：人気の映画だったのに<ruby><span>観</span><rp>(</rp><rt>み</rt><rp>)</rp></ruby>ていなかったの？</p>
+                <p>田中：うん、あとでビデオを借りて＿＿＿＿と思っていたから・・・。<strong>（<ruby><span>観</span><rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます）</strong></p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>あとでビデオを借りて<strong>観よう</strong>と思っていたから・・・。</p></div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 3</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>ああ、おいしかった。このレストランにはまた来ようと<strong>（思います／思っています）</strong>。</p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>ああ、おいしかった。このレストランにはまた来ようと<strong>思います</strong>。</p>
+            <p>Pada kalimat di atas, menunjukkan bahwa pembicara memutuskan melakukan sesuatu, lalu mengungkapkannya.</p>
+            </div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 4</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>タバコをやめようとずっと<strong>（思います／思っています）</strong>が、なかなかやめられません。</p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>タバコをやめようとずっと<strong>思っています</strong>が、なかなかやめられません。</p>
+            <p>Pola kalimat di atas menunjukkan bahwa pembicara sudah sejak lama bermaksud melakukan sesuatu.</p>
+            </div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 5</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>彼は<span><ruby><span>喫</span><rp>(</rp><rt>きっ</rt><rp>)</rp></ruby>
+                  <span><ruby><span>茶</span><rp>(</rp><rt>さ</rt><rp>)</rp></ruby>
+                  <span><ruby><span>店</span><rp>(</rp><rt>てん</rt><rp>)</rp></ruby></span></span></span>を作ろうと<strong>（思います／思っています）</strong>。</p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>彼は<span><ruby><span>喫</span><rp>(</rp><rt>きっ</rt><rp>)</rp></ruby>
+                <span><ruby><span>茶</span><rp>(</rp><rt>さ</rt><rp>)</rp></ruby>
+                <span><ruby><span>店</span><rp>(</rp><rt>てん</rt><rp>)</rp></ruby></span></span></span>を作ろうと<strong>思っています</strong>。</p>
+            <p>Pola 意向形＋と思っています bisa digunakan untuk menyatakan maksud dari orang ke tiga, sedangkan 意向形＋と思います hanya bisa menyatakan maksud pembicara.</p>
+            </div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 6</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan mengubah bentuk kata kerja yang terdapat dalam tanda ( ) ke bentuk yang tepat!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>今晩、友だちの部屋に＿＿＿＿＿つもりです。<strong>（<ruby>泊<rp>(</rp> <rt>と</rt> <rp>)</rp> </ruby>まります）</strong></p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>今晩、友だちの部屋に<ruby>泊<rp>(</rp> <rt>と</rt> <rp>)</rp> </ruby>まるつもりです。</p></div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 7</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan mengubah bentuk kata kerja yang terdapat dalam tanda ( ) ke bentuk yang tepat!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p><ruby>世<rp>(</rp> <rt>せ</rt> <rp>)</rp> </ruby><ruby>話<rp>(</rp> <rt>わ</rt> <rp>)</rp> </ruby>が大変なので、ペットは＿＿＿＿つもりです。<strong>（<ruby>飼<rp>(</rp> <rt>か</rt> <rp>)</rp> </ruby>いません）</strong></p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p><ruby>世<rp>(</rp> <rt>せ</rt> <rp>)</rp> </ruby><ruby>話<rp>(</rp> <rt>わ</rt> <rp>)</rp> </ruby>が大変なので、ペットは<strong><ruby>飼<rp>(</rp> <rt>か</rt> <rp>)</rp> </ruby>わない</strong>つもりです。</p></div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 8</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>ミラ：あなたは最初から、彼を<ruby>危<rp>(</rp> <rt>あぶ</rt> <rp>)</rp> </ruby>ない目にあわせようと考えていたにちがいない</p>
+                <p>キム：ちがう、私はそんなことを<strong>（しないつもりです／するつもりはありません）</strong>。</p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>キム：ちがう、私はそんなことを<strong>するつもりはありません</strong>。</p>
+            <p>Pola するつもりはありません lebih kuat daripada pola ないつもりです, jadi ketika ingin menyangkal suatu tuduhan pola yang digunakan adalah pola するつもりはありません.</p>
+            </div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 9</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>明日は朝9時の<ruby>飛<rp>(</rp> <rt>ひ</rt> <rp>)</rp> </ruby><ruby>行<rp>(</rp> <rt>こう</rt> <rp>)</rp> </ruby><ruby>機<rp>(</rp> <rt>き</rt> <rp>)</rp> </ruby>に<strong>（乗る／乗るの／乗ります）</strong>予定です。</p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>明日は朝9時の<ruby>飛<rp>(</rp> <rt>ひ</rt> <rp>)</rp> </ruby><ruby>行<rp>(</rp> <rt>こう</rt> <rp>)</rp> </ruby><ruby>機<rp>(</rp> <rt>き</rt> <rp>)</rp> </ruby>に<strong>乗る</strong>予定です。</p></div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 10</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>午後3時から、<ruby>取<rp>(</rp> <rt>とり</rt> <rp>)</rp> </ruby><ruby>引<rp>(</rp> <rt>ひき</rt> <rp>)</rp> </ruby><ruby>先<rp>(</rp> <rt>さき</rt> <rp>)</rp> </ruby>と<strong>（ミーティング／ミーティングの／ミーティングをします）</strong>予定です。</p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>午後3時から、<ruby>取<rp>(</rp> <rt>とり</rt> <rp>)</rp> </ruby><ruby>引<rp>(</rp> <rt>ひき</rt> <rp>)</rp> </ruby><ruby>先<rp>(</rp> <rt>さき</rt> <rp>)</rp> </ruby>と<strong>ミーティングの</strong>予定です。</p></div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 11</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>今日は私がご飯を<strong>（作ろうと思っています／作るつもりだと思います）</strong>。</p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>今日は私がご飯を<strong>作ろうと思っています</strong>。</p>
+            <p>Pola つもりだと思います biasa digunakan ketika menyatakan maksud/niat dari orang ke tiga.</p>
+            </div>
+        </div>
+        <div>
+            <span class=" bg-salmon shadow-sm p-2 rounded my-1">Soal nomor 12</span>
+            <div class="text-dec-1 text-left">
+                <p>Lengkapilah kalimat rumpang di bawah ini, dengan memilih salah satu bentuk yang terdapat dalam tanda ( ) lalu tuliskan di kolom yang tersedia!</p>
+                <p><i><strong>Catatan : </strong>gunakan jenis huruf (kanji/kana) yang sesuai dengan yang terdapat dalam soal!</i></p>
+                <p>あ、新しい店ができましたね。私はちょっとこの店を<strong>（見ようと思っています／見ようと思います／見るつもりです／見る予定です）</strong>。</p>
+              </div>
+              <div class="alert alert-success"><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-bookmark-check-fill topright2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm6.854 5.854a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+              </svg><h3 class="alert-heading font-jp"><ruby>正<rp>(</rp> <rt>せい</rt> <rp>)</rp> </ruby><ruby>解<rp>(</rp> <rt>かい</rt> <rp>)</rp> </ruby></h3> Jawaban Anda <strong>Benar!</strong><p>あ、新しい店ができましたね。私はちょっとこの店を<strong>見ようと思います</strong>。</p>
+            <p>Kalimat di atas, mengindikasikan bahwa pembicara baru mengetahui kalau ada toko baru, jadi selain pola ようと思う, pola lain tidak bisa digunakan.</p>
+            </div>
+        </div>
+    </div>
+    <!--kjs end-->
+        <!--HInts-->
+    <button class="btn btn-outline-salmon" data-toggle="collapse" data-target="#hints" aria-expanded="false" aria-controls="hints">
+      Petunjuk/Bantuan
+    </button><br><br>
+    <div class="collapse" id="hints">
+      <table class="table table-bordered" border="1" cellpadding="0" cellspacing="0"> <tbody> <tr class="bg-salmon font-weight-bold"> <td colspan="2" width="100%"> <p>Soal nomor 1 &amp; 2</p> </td> </tr> <tr> <td width="50%"> <p>観る</p> </td> <td width="50%"> <p>Menonton</p> </td> </tr> <tr class="bg-salmon font-weight-bold"> <td colspan="2" width="100%"> <p>Soal nomor 7</p> </td> </tr> <tr> <td width="50%"> <p>世話</p> </td> <td width="50%"> <p>Mengurusi</p> </td> </tr> <tr class="bg-salmon font-weight-bold"> <td colspan="2" width="100%"> <p>Soal nomor 8</p> </td> </tr> <tr> <td width="50%"> <p>～にちがいない</p> </td> <td width="50%"> <p>Tidak salah lagi~</p> </td> </tr> <tr class="bg-salmon font-weight-bold"> <td colspan="2" width="100%"> <p>Soal nomor 10</p> </td> </tr> <tr> <td width="50%"> <p>取引先</p> </td> <td width="50%"> <p>Rekan bisnis</p> </td> </tr> </tbody></table>
+    </div>
+    <!--end of hints-->
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="row m-md-5 px-lg-5">
+      <footer class="col bg-french shadow px-4 py-5 p-md-5 my-sm-1 mx-sm-5 m-3 rounded" style="opacity: 0.8;">
+        <h1 class="font-jp d-none d-lg-block right-foot">練習</h1>
+        <h4>Inovasi Pengajaran Bahasa Jepang</h4><p>Group</p>
+      </footer>
+    </div>
+    </div>
+     <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-jp" id="exampleModalLongTitle">おめでとうございます！</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-justify">
+        Selamat dan terima kasih telah menyelesaikan latihan soal yang tersedia, semoga pemahaman mengenai pola 「（よう）と思う」、「つもり」、「予定」semakin bertamabah dan bisa menggunakannya dengan tepat.
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="next13()">Lihat soal dan kunci jawaban</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--bg ani-->
+<div class="boxes">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<script>
+    $(document).ready(function() {
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+    $('#toTopBtn').fadeIn();
+    } else {
+    $('#toTopBtn').fadeOut();
+    }
+    });
+    
+    $('#toTopBtn').click(function() {
+    $("html, body").animate({
+    scrollTop: 0
+    }, 100);
+    return false;
+    });
+    });
+</script>
+</body>
+</html>
+    

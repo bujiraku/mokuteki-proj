@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error 404 (Not Found)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <script src="/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="wrapper-2" style="height: 100vh;">
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+    <div class="container-sm">
+    <div class="row m-md-5 px-lg-5">
+        <div class="col text-center bg-french shadow px-4 py-5 p-md-5 my-sm-1 mx-sm-5 m-3 rounded" style="opacity: 0.8;">
+            <h1><span style="font-family: HakusyuKaisyoExtraBold_kk;">エラー</span></h1>
+            <h3><span  style="font-family: HakusyuKaisyoExtraBold_kk;">エラーコード&nbsp;</span>404 (Not Found)</h3><hr>
+            <a href="/" class="bg-salmon shadow-sm p-2 btn">Back to Home&nbsp;<svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+              <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            </svg>&nbsp;</a>
+            
+            </div>
+        </div>
+    </div>
+<!--bg ani-->
+<div class="boxes">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+      $('#toTopBtn').fadeIn();
+      } else {
+      $('#toTopBtn').fadeOut();
+      }
+      });
+      
+      $('#toTopBtn').click(function() {
+      $("html, body").animate({
+      scrollTop: 0
+      }, 100);
+      return false;
+      });
+      });
+      </script>
+</body>
+</html>
+    
